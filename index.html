@@ -1,88 +1,172 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Schulferien in der Schweiz</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        h2 {
-            color: #34495e;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        ul {
-            line-height: 1.6;
-        }
-        .pro {
-            border-left: 5px solid green;
-            padding-left: 10px;
-        }
-        .contra {
-            border-left: 5px solid red;
-            padding-left: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Schulferien Schweiz</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f9fafb;
+        color: #333;
+    }
+
+    header {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(135deg, #4f46e5, #06b6d4);
+        color: white;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        opacity: 0.9;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    /* Hover Animation */
+    .card:hover {
+        transform: translateY(-5px) scale(1.01);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding-left: 20px;
+        line-height: 1.6;
+    }
+
+    .pro {
+        border-left: 5px solid #22c55e;
+    }
+
+    .contra {
+        border-left: 5px solid #ef4444;
+    }
+
+    /* Scroll Animation sichtbar */
+    .show {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.6s ease;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 0.9rem;
+        color: #777;
+    }
+</style>
 </head>
+
 <body>
 
-    <h1>Sollte es mehr Schulferien in der Schweiz geben?</h1>
+<header>
+    <h1>Schulferien in der Schweiz</h1>
+    <p>Sollte es mehr Ferien geben?</p>
+</header>
 
-    <div class="container">
-        <h2>📊 Fakten</h2>
-        <ul>
-            <li>In der Schweiz gibt es etwa 13 Wochen Schulferien pro Jahr</li>
-            <li>Die Ferien sind auf das ganze Jahr verteilt</li>
-            <li>Jeder Kanton legt seine eigenen Ferien fest</li>
-        </ul>
-    </div>
+<section>
 
-    <div class="container pro">
-        <h2>👍 Argumente für mehr Ferien</h2>
-        <ul>
-            <li>Mehr Erholung für Schülerinnen und Schüler</li>
-            <li>Weniger Stress und bessere mentale Gesundheit</li>
-            <li>Mehr Zeit für Familie und Hobbys</li>
-            <li>Bessere Konzentration nach Pausen</li>
-        </ul>
-    </div>
+<div class="card">
+    <h2>📊 Fakten</h2>
+    <ul>
+        <li>Ca. 13 Wochen Schulferien pro Jahr</li>
+        <li>Ferien sind über das Jahr verteilt</li>
+        <li>Unterschiede je nach Kanton</li>
+    </ul>
+</div>
 
-    <div class="container contra">
-        <h2>👎 Argumente gegen mehr Ferien</h2>
-        <ul>
-            <li>Weniger Zeit zum Lernen</li>
-            <li>Mehr Druck während der Schulzeit</li>
-            <li>Betreuung wird für Eltern schwieriger</li>
-            <li>Die Schweiz hat bereits viele Ferien</li>
-        </ul>
-    </div>
+<div class="card pro">
+    <h2>👍 Pro</h2>
+    <ul>
+        <li>Mehr Erholung</li>
+        <li>Weniger Stress</li>
+        <li>Mehr Freizeit</li>
+        <li>Bessere Konzentration</li>
+    </ul>
+</div>
 
-    <div class="container">
-        <h2>🤔 Weitere Überlegungen</h2>
-        <ul>
-            <li>Wichtiger als mehr Ferien ist vielleicht eine bessere Verteilung</li>
-            <li>Schulstress könnte auch anders reduziert werden</li>
-            <li>Andere Länder haben weniger Ferien, aber längere Schultage</li>
-        </ul>
-    </div>
+<div class="card contra">
+    <h2>👎 Contra</h2>
+    <ul>
+        <li>Weniger Lernzeit</li>
+        <li>Mehr Druck im Unterricht</li>
+        <li>Betreuung schwierig</li>
+        <li>Schon viele Ferien vorhanden</li>
+    </ul>
+</div>
 
-    <div class="container">
-        <h2>🧠 Fazit</h2>
-        <p>
-            Mehr Ferien könnten gut für die Erholung sein, aber sie bringen auch Herausforderungen
-            mit sich. Es ist wichtig, eine Balance zwischen Lernen und Freizeit zu finden.
-        </p>
-    </div>
+<div class="card">
+    <h2>🤔 Weitere Punkte</h2>
+    <ul>
+        <li>Verteilung der Ferien ist wichtig</li>
+        <li>Schulstress könnte reduziert werden</li>
+        <li>Vergleich mit anderen Ländern</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>🧠 Fazit</h2>
+    <p>
+        Mehr Ferien sind angenehm, aber nicht unbedingt notwendig.
+        Wichtig ist die Balance zwischen Lernen und Erholung.
+    </p>
+</div>
+
+</section>
+
+<footer>
+    © 2026 Schulprojekt
+</footer>
+
+<script>
+    // Scroll Animation
+    const cards = document.querySelectorAll('.card');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+</script>
 
 </body>
 </html>
